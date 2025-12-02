@@ -43,4 +43,4 @@ def compute_bill(food):
       stock[x] -= 1
   return total
 
-  print(compute_bill(stock["banana"]))
+print(compute_bill(stock))
