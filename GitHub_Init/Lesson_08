@@ -1,0 +1,28 @@
+#First exercise
+
+fruits = ['banana', 'apple', 'orange', 'tomato', 'pear', 'grape']
+
+print('You have...')
+for f in fruits:
+  if f == 'tomato':
+    print('A tomato is not a fruit!')
+  print('A', f)
+else:
+  print('A fine selection of fruits!')
+
+#Second exercise
+def remove_duplicates(dup_list):
+  result = []
+  if len(dup_list) >0:
+    result.append(dup_list[0])
+  else:
+    return result
+  for x in dup_list:
+    i = 0
+    to_change = 0
+    for i in range(len(result)):
+      if x == result[i]:        
+        to_change += 1    
+    if to_change == 0:
+      result.append(x)    
+  return result
